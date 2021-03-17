@@ -1,0 +1,24 @@
+{
+  "name": "quiz-game-dieuanh-nguyen-and-juliet-masica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staten-island-tech/quiz-game-dieuanh-nguyen-and-juliet-masica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staten-island-tech/quiz-game-dieuanh-nguyen-and-juliet-masica/issues"
+  },
+  "homepage": "https://github.com/staten-island-tech/quiz-game-dieuanh-nguyen-and-juliet-masica#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}
