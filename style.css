@@ -66,23 +66,23 @@ body {
 
 .answer-section:hover {
   background-color: rgba(218, 172, 178, 0.431);
-}
-
-.question-footer {
-  padding: 1rem 0 0;
-  text-align: right;
-}
-
-.skip-button {
-  padding: 0.8rem 2rem;
-  background-color: palevioletred;
-  border-radius: 1.5rem;
+  transform: scale(1.02);
+  transform: transform 100ms;
+  cursor: pointer;
 }
 
 .correct {
-  background-color: rgb(148, 255, 148);
+  background: linear-gradient(
+    32deg,
+    rgb(181, 222, 196) 0%,
+    rgb(149, 208, 171) 100%
+  );
 }
 
 .incorrect {
-  background-color: rgb(255, 127, 127);
+  background: linear-gradient(
+    32deg,
+    rgb(252, 190, 190) 0%,
+    rgb(254, 166, 166) 100%
+  );
 }

@@ -1,8 +1,6 @@
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
-const progressText = document.querySelector("#progressText");
 const scoreText = document.querySelector("#score");
-const progressBarFull = document.querySelector("#progressBarFull");
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -15,7 +13,7 @@ let questions = [
     choice2: "Italy",
     choice3: "Australia",
     choice4: "Japan",
-    correct: 2,
+    answer: 2,
   },
   {
     question: "Who is the main character in Harry Potter?",
@@ -23,7 +21,7 @@ let questions = [
     choice2: "Hairy Potter",
     choice3: "Harry Potter",
     choice4: "Henrie Potsticker",
-    correct: 3,
+    answer: 3,
   },
   {
     question: "Which of these Avengers isn't dead?",
@@ -31,7 +29,7 @@ let questions = [
     choice2: "Hawkeye",
     choice3: "Black Widow",
     choice4: "Vision",
-    correct: 2,
+    answer: 2,
   },
   {
     question: "Who is the best spiderman?",
@@ -39,7 +37,7 @@ let questions = [
     choice2: "Andrew Garfield",
     choice3: "Tom Holland",
     choice4: "none of them",
-    correct: 3,
+    answer: 3,
   },
   {
     question:
@@ -48,7 +46,7 @@ let questions = [
     choice2: "JJ",
     choice3: "Aaron Hotch",
     choice4: "Emily Prentis",
-    correct: 1,
+    answer: 1,
   },
   {
     question: "What does mintchip icecream taste like?",
@@ -56,7 +54,7 @@ let questions = [
     choice2: "mint",
     choice3: "chocolate",
     choice4: "toothpaste",
-    correct: 4,
+    answer: 4,
   },
   {
     question: "What is the captial of the US?",
@@ -64,7 +62,7 @@ let questions = [
     choice2: "Boston",
     choice3: "New York",
     choice4: "San Francisco",
-    correct: 1,
+    answer: 1,
   },
   {
     question: "Which of these items can't you write with?",
@@ -72,7 +70,7 @@ let questions = [
     choice2: "carrot",
     choice3: "pen",
     choice4: "highlighter",
-    correct: 1,
+    answer: 2,
   },
   {
     question: "Which of these is a vegetable?",
@@ -80,7 +78,7 @@ let questions = [
     choice2: "dirt",
     choice3: "lettuce",
     choice4: "ice cubes",
-    correct: 3,
+    answer: 3,
   },
   {
     question: "How hard was this quiz?",
@@ -88,12 +86,12 @@ let questions = [
     choice2: "too easy",
     choice3: "extremely easy",
     choice4: "hardest quiz i've ever taken",
-    correct: 4,
+    answer: 4,
   },
 ];
 
-const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 10;
+const scorePoints = 10;
+const maxQuestions = 10;
 
 startGame = () => {
   questionCounter = 0;
@@ -103,7 +101,7 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-  if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+  if (availableQuestions.length === 0 || questionCounter > maxQuestions) {
     localStorage.setItem("mostRecentScore", score);
 
     return window.location.assign("/end.html");
@@ -135,7 +133,7 @@ choices.forEach((choice) => {
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
     if (classToApply === "correct") {
-      incrementScore(SCORE_POINTS);
+      incrementScore(scorePoints);
     }
 
     selectedChoice.parentElement.classList.add(classToApply);
