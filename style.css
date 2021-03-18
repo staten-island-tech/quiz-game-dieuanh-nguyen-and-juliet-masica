@@ -55,7 +55,7 @@ body {
   z-index: 1;
 }
 
-.answer-section span {
+.answer-section {
   display: block;
   padding: 0.8rem 1.5rem;
   border-radius: 1.5rem;
@@ -64,16 +64,8 @@ body {
   font-size: 1.2rem;
 }
 
-.answer-section:hover span {
+.answer-section:hover {
   background-color: rgba(218, 172, 178, 0.431);
-}
-
-.answer-section input:checked + span {
-  background-color: palevioletred;
-}
-
-.answer-section input[valid]:checked + span {
-  background-color: rgb(191, 255, 191);
 }
 
 .question-footer {
@@ -85,4 +77,12 @@ body {
   padding: 0.8rem 2rem;
   background-color: palevioletred;
   border-radius: 1.5rem;
+}
+
+.correct {
+  background-color: rgb(148, 255, 148);
+}
+
+.incorrect {
+  background-color: rgb(255, 127, 127);
 }

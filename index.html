@@ -9,32 +9,29 @@
 
     <div class="question-box">
       <div class="question-header">
-        <span>Score: <span id="score">0</span></span> 
-        <span id="countdown">0</span> 
+        <span>Score: <span id="score">0</span></span>
+        <span id="countdown">0</span>   
       </div>
       <div class="question-body">
         <div class="question-set active">
-          <h4>1. Add Question Here</h4>
+          <h4 id="question">1. Add Question Here</h4>
           <div class="answer-section">
-            <input type="radio" name="a1">
-            <span>answer here 1</span>
-          </div>
-          <div class="answer-section">
-            <input type="radio" name="a1" valid="valid">
-            <span>answer here 2 *correct*</span>
-          </div>
-          <div class="answer-section">
-            <input type="radio" name="a1">
-            <span>answer here 3</span>
-          </div>
-          <div class="answer-section">
-            <input type="radio" name="a1">
-            <span>answer here 4</span>
-          </div>
+            <p class="choice-text" data-number="1">Choice 1</p>
+        </div>
+        <div class="answer-section">
+            <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="answer-section">
+            <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="answer-section">
+            <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
         </div>
       </div>  
       <div class="question-footer">
         <span class="skip-button" id="skip">Skip</span>
       </div> 
     </div>
+    <script src="app.js"></script>
 </body>
