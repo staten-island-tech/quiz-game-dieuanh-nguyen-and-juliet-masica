@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Quiz Game</title>
+</head>  
+<body>
+
+    <div class="question-box">
+      <div class="question-header">
+        <span>Score: <span id="score">0</span></span> 
+        <span id="countdown">0</span> 
+      </div>
+      <div class="question-body">
+        <div class="question-set active">
+          <h4>1. Add Question Here</h4>
+          <div class="answer-section">
+            <input type="radio" name="a1">
+            <span>answer here 1</span>
+          </div>
+          <div class="answer-section">
+            <input type="radio" name="a1" valid="valid">
+            <span>answer here 2 *correct*</span>
+          </div>
+          <div class="answer-section">
+            <input type="radio" name="a1">
+            <span>answer here 3</span>
+          </div>
+          <div class="answer-section">
+            <input type="radio" name="a1">
+            <span>answer here 4</span>
+          </div>
+        </div>
+      </div>  
+      <div class="question-footer">
+        <span class="skip-button" id="skip">Skip</span>
+      </div> 
+    </div>
+</body>
