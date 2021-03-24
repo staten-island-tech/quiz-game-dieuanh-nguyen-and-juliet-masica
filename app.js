@@ -1,17 +1,15 @@
 const question = document.querySelector("#question"); //allows you to change the nature of the element (class to id, vice versa)
 const choices = Array.from(document.querySelectorAll(".choice-text"));
 const scoreText = document.querySelector("#score");
-const startButton = document.getElementById('start-btn');
+const startButton = document.getElementById("start-btn");
 
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0; //score starts at 0
-let questionCounter = 0 //questions start at 0
+let questionCounter = 0; //questions start at 0
 let availableQuestions = [];
 
-startButton.addEventListener('click', startGame)
-
-
+//startButton.addEventListener("click", startGame);
 
 let questions = [
   {
@@ -97,8 +95,6 @@ let questions = [
   },
 ];
 
-
-
 const scorePoints = 10;
 const maxQuestions = 10;
 
@@ -122,10 +118,10 @@ getNewQuestion = () => {
 
   choices.forEach((choice) => {
     const number = choice.dataset["number"]; //recognizes what choice is being clicked on
-    choice.innerText = currentQuestion["choice" + number]; 
+    choice.innerText = currentQuestion["choice" + number];
   });
 
-  availableQuestions.splice(questionsIndex, 1); 
+  availableQuestions.splice(questionsIndex, 1);
 
   acceptingAnswers = true;
 };
@@ -139,15 +135,16 @@ choices.forEach((choice) => {
     const selectedAnswer = selectedChoice.dataset["number"];
 
     let classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; 
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
     if (classToApply === "correct") {
       incrementScore(scorePoints); //increases score by 10 when a question is answered correct
     }
 
-    selectedChoice.parentElement.classList.add(classToApply); 
+    selectedChoice.parentElement.classList.add(classToApply);
 
-    setTimeout(() => { //whenever we answer a question, it'll have time to show
+    setTimeout(() => {
+      //whenever we answer a question, it'll have time to show
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
     }, 1000);
