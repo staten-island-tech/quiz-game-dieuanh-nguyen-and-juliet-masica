@@ -10,6 +10,53 @@ body {
   background-color: pink;
 }
 
+.start-btn, 
+.start-btn:link,
+.start-btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 5rem;
+    background-color: palevioletred;
+    margin: 1rem auto;
+    font-size: 2rem;
+    transition: all 0.3s;
+    position: relative; 
+}
+
+.start-btn {
+    background-color: palevioletred;
+    color: black;
+}
+
+.start-btn::after {
+    background-color: palevioletred;
+    color: black;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 0.5rem rgba (black, 0.6); 
+} 
+
+.start-btn::after { 
+    content:""; 
+    display: inline/block; 
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: -1; 
+    transition: all 0.3s; 
+} 
+
+.start-btn:active { 
+    transform: translateY(-1px); 
+    transform: scaleX(1.5) scaleY(1.6); 
+    box-shadow: 0 0.5rem 1rem black; 
+}
+
+
 .question-box {
   width: 45rem;
   padding: 3rem;
@@ -24,7 +71,7 @@ body {
   padding: 1.5rem 1.5rem;
   margin: -2rem -2rem 20px;
   border-radius: 2rem 2rem 0 0;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .question-set {
@@ -37,7 +84,7 @@ body {
 
 .question-set h4 {
   margin: 0 0 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .answer-section {
@@ -61,7 +108,7 @@ body {
   border-radius: 1.5rem;
   transition: all 0.3s;
   background-color: rgba(255, 203, 210, 0.431);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .answer-section:hover {
