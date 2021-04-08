@@ -2,13 +2,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/index.HASH_REF_f0918a547ace1733ebc251b0de60a1d7.css">
 
 <title>Quiz Game</title>
 </head>  
 <body>
 <!--Start game button-->
-<button  class="start-btn">Start Quiz</button>
+<button class="start-btn">Start Quiz</button>
     
 <!--questions-->
     <div class="question-box">
@@ -19,7 +19,7 @@
         <div class="question-set active">
           <h4 id="question">1. Add Question Here</h4>
           <div class="answer-section">
-            <p class="choice-text" data-number="1">Chsdfgoice 1</p>
+            <p class="choice-text" data-number="1">Choice 1</p>
         </div>
         <div class="answer-section">
             <p class="choice-text" data-number="2">Choice 2</p>
@@ -33,5 +33,6 @@
         </div>
       </div>  
     </div>
-    <script src="app.js"></script>
+    <script src="/index.HASH_REF_c75227167347e57df55b258c72166a09.js"></script>
 </body>
+</html>

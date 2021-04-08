@@ -2,7 +2,7 @@
   "name": "quiz-game-dieuanh-nguyen-and-juliet-masica",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel ./src/index.html"

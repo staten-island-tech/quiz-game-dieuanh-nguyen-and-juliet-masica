@@ -2,13 +2,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="76d74868bf480873460adb8aad1df89c">
 
 <title>Quiz Game</title>
 </head>  
 <body>
 <!--Start game button-->
-<button  class="start-btn">Start Quiz</button>
+<button class="start-btn">Start Quiz</button>
     
 <!--questions-->
     <div class="question-box">
@@ -33,5 +33,6 @@
         </div>
       </div>  
     </div>
-    <script src="app.js"></script>
+    <script src="bb11c1d1f8d50ea26919ce5262610323"></script>
 </body>
+</html>
