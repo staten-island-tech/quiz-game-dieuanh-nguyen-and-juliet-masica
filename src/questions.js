@@ -33,7 +33,7 @@ let questions = [
   },
   {
     question:
-      "Which character from Criminal Minds have suffered the most trauma?",
+      "Which character from Criminal Minds has suffered the most trauma?",
     choice1: "Spencer Reid",
     choice2: "JJ",
     choice3: "Aaron Hotch",
