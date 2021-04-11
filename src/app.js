@@ -75,4 +75,6 @@ const incrementScore = (num) => {
   scoreText.innerText = score;
 };
 
-startButton.addEventListener("click", startGame);
+// startButton.addEventListener("click", startGame);
+
+startGame();

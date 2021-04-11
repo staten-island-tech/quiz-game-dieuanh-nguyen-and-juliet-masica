@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="76d74868bf480873460adb8aad1df89c">
+<link rel="stylesheet" href="2bc7c9b3f5a816513564d61c32ca5098">
+
+<title>Quiz Game</title>
+</head>  
+<body>
+
+<!--Start game button-->
+<button class="start-btn">Start Quiz</button>
+
+<!--questions-->
+    <div class="question-box">
+      <div class="question-header">
+        <span>Score: <span id="score">0 </span></span>   
+      </div>
+      <div class="question-body">
+        <div class="question-set active">
+          <h4 id="question">1. Add Question Here</h4>
+          <div class="answer-section">
+            <p class="choice-text" data-number="1">Chsdfgoice 1</p>
+        </div>
+        <div class="answer-section">
+            <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="answer-section">
+            <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="answer-section">
+            <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+        </div>
+      </div>  
+    </div>
+    <script src="bb11c1d1f8d50ea26919ce5262610323"></script>
+</body>
+</html>
