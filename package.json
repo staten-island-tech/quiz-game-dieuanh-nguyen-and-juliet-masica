@@ -4,14 +4,14 @@
   "description": "",
   
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "parcel ./src/index.html"
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/staten-island-tech/quiz-game-dieuanh-nguyen-and-juliet-masica.git"
   },
-  "keywords": [],
+  "keywords": [], 
   "author": "",
   "license": "ISC",
   "bugs": {
