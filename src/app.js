@@ -12,7 +12,7 @@ let questionCounter = 0; //questions start at 0
 let availableQuestions = [];
 
 const scorePoints = 10;
-const maxQuestions = 10;
+const maxQuestions = questions.length;
 
 const startGame = function () {
   console.log("started");
